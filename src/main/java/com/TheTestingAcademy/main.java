@@ -1,4 +1,4 @@
-package com.thetestingacademy;
+package com.TheTestingAcademy;
 
 public class main {
     public static void main(String[] args) {
