@@ -47,19 +47,8 @@ public class WebTablesPart2 {
                     System.out.println("-------------");
                     System.out.println("Lek capital is: " + capital1);
                     System.out.println("Lek language is: " + language1);
-
-
-
                 }
-
-
             }
         }
-
-
-
-
-
-
     }
 }

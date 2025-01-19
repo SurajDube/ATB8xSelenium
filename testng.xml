@@ -2,7 +2,7 @@
 <suite name="SeleniumTestSuite">
     <test name="LoginTest">
         <packages>
-            <package name="com.TheTestingAcademy.HandlingSVG_ShadowDOM"/>
+            <package name="com.TheTestingAcademy.WebTables"/>
         </packages>
     </test>
 </suite>
