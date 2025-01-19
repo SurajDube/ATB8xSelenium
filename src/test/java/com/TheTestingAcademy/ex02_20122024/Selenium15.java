@@ -30,7 +30,6 @@ public class Selenium15 {
         } else {
             throw new Exception("Heading Not Found!");
         }
-
         driver.quit();
     }
 }

@@ -9,6 +9,4 @@ public class Selenium06 {
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.youtube.com/");
     }
-
-
 }

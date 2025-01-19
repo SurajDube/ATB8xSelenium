@@ -44,12 +44,12 @@ public class Task003 {
 
         WebElement frm_btn = driver.findElement(By.id("frm-btn"));
         frm_btn.click();
-        Thread.sleep(3000);
+        Thread.sleep(2000);
 
-        WebElement errorMessage = driver.findElement(By.xpath("//h5[@class='id-card-title']"));
+        WebElement errorMessage = driver.findElement(By.xpath("//h5[text()='Your free trial has expired']"));
 
         Assert.assertEquals(errorMessage.getText(), "Your free trial has expired");
-        System.out.println("Message Verification:" + errorMessage.getText());
+        //System.out.println("Message Verification:" + errorMessage.getText());
 
        // driver.quit();
 

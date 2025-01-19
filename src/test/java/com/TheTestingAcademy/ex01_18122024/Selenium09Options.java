@@ -42,6 +42,5 @@ public class Selenium09Options {
         System.out.println("Page Title: " + title);
         driver1.quit();
     }
-
 }
 

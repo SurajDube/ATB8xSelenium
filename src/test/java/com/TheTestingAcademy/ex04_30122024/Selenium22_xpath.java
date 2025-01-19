@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Selenium22_xpath {
     @Test
-    public void testMethod() throws InterruptedException {
+    public void testMethod() throws Exception {
         EdgeOptions edgeOptions = new EdgeOptions();
         edgeOptions.addArguments("--incognito");
         edgeOptions.addArguments("--start-maximized");
@@ -20,7 +20,7 @@ public class Selenium22_xpath {
         WebElement input_searchBox = edgeDriver.findElement(By.xpath("//input[@id='gh-ac']"));
         input_searchBox.sendKeys("macmini");
 
-        WebElement input_searchButton = edgeDriver.findElement(By.xpath("//input[@value='Search']"));
+        WebElement input_searchButton = edgeDriver.findElement(By.xpath("//button[@id='gh-search-btn']"));
         input_searchButton.click();
 
         List<WebElement> searchTitle = edgeDriver.findElements(By.xpath("//div[@class='s-item__title']"));
@@ -38,5 +38,5 @@ public class Selenium22_xpath {
         }
         Thread.sleep(3000);
         edgeDriver.quit();
-        }
+    }
 }
