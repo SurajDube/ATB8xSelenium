@@ -49,9 +49,19 @@ public class Task003 {
         WebElement errorMessage = driver.findElement(By.xpath("//h5[text()='Your free trial has expired']"));
 
         Assert.assertEquals(errorMessage.getText(), "Your free trial has expired");
-        //System.out.println("Message Verification:" + errorMessage.getText());
+        System.out.println("Message Verification:" + errorMessage.getText());
 
-       // driver.quit();
+        String Actual_Title = errorMessage.getText();
+        if (Actual_Title.equals("Your free trial has expired")){
+
+            System.out.println("Test case passed!");
+        }
+        else
+        {
+            System.out.println("Test case failed");
+        }
+
+        driver.quit();
 
 
 

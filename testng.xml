@@ -2,12 +2,7 @@
 <suite name="SeleniumTestSuite">
     <test name="LoginTest">
         <packages>
-            <package name="com.TheTestingAcademy.ex01_18122024"/>
-            <package name="com.TheTestingAcademy.ex02_20122024"/>
-            <package name="com.TheTestingAcademy.ex03_23122024"/>
-            <package name="com.TheTestingAcademy.ex04_30122024"/>
-            <package name="com.TheTestingAcademy.ex05_03012025"/>
-            <package name="com.TheTestingAcademy.Task"/>
+            <package name="com.TheTestingAcademy.HandlingSVG_ShadowDOM"/>
         </packages>
     </test>
 </suite>

@@ -1,15 +1,14 @@
-package com.TheTestingAcademy.ex03_23122024;
+package com.TheTestingAcademy.Waits;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class Selenium18_VWO_FreeTrial {
+public class ImplicitWait_VWO_FreeTrial {
     @Test
     public void testMethod() throws InterruptedException {
 
@@ -33,7 +32,7 @@ public class Selenium18_VWO_FreeTrial {
 //        link_free_trial.click();
 
         WebElement link_free_trial = edgeDriver.findElement(By.partialLinkText("free trial"));
-        edgeDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        edgeDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         link_free_trial.click();
         edgeDriver.quit();
 
