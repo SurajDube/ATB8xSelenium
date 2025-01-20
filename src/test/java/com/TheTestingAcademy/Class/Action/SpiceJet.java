@@ -24,6 +24,5 @@ public class SpiceJet {
         Actions actions = new Actions(driver);
         //actions.moveToElement(source).click();
         actions.moveToElement(source).click().sendKeys("BLR").build().perform();
-
     }
 }
