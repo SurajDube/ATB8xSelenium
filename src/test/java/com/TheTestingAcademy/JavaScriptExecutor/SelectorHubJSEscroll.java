@@ -9,7 +9,7 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
-public class SelectorHubJSE {
+public class SelectorHubJSEscroll {
     WebDriver driver;
 
     @Test
@@ -24,19 +24,11 @@ public class SelectorHubJSE {
         driver.get(URL);
         driver.manage().window().maximize();
         JavascriptExecutor js = (JavascriptExecutor) driver;
-
-        WebElement div_to_scroll = driver.findElement(By.xpath("//div[@id ='userName']"));
-        js.executeScript("arguments[0].scrollIntoView(true);", div_to_scroll);
-
-        Thread.sleep(3000);
-        WebElement inputBoxUsername = (WebElement) js.executeScript("return document.querySelector(\"div#userName\").shadowRoot.querySelector(\"input#kils\");");
-        inputBoxUsername.sendKeys("vijayJS");
-
-//        js.executeScript("window.scrollBy(0, 500);");
-//        js.executeScript("alert('Hello Ji')");
+        js.executeScript("window.scrollBy(0, 500);");
+        String purl = js.executeScript("return document.URL").toString();
+        System.out.println(purl);
 
 
     }
-
-
 }
+
