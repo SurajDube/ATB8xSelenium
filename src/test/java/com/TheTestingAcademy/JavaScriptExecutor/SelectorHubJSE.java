@@ -1,4 +1,4 @@
-package com.TheTestingAcademy.HandlingSVG_ShadowDOM;
+package com.TheTestingAcademy.JavaScriptExecutor;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
